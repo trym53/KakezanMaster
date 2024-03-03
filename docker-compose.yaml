@@ -6,7 +6,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./:/usr/src/app
+      - ./app/my-app:/usr/src/app
       - /usr/src/app/node_modules
     command: sh -c 'npm start'
     ports:
